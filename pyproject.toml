@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "radarwow-qc"
+version = "0.1.0"
+description = "radar-wow stage 2: radar quality control - noise, ground clutter (Hubbert 2009 CMD), quality map (Vulpiani 2012), interference, speckle, biology"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = ["radarwow-core", "numpy", "scipy", "xarray"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = true
